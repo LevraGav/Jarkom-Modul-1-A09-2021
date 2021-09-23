@@ -27,9 +27,10 @@ Cara :
 Cara :
 - Membuka file yang telah didownload dari drive (1-5)
 - Mengisi display filter dengan : http.host contains "basic.ichimarumaru.tech"
-![image](nomor3a.png)
+![nomor3a](https://user-images.githubusercontent.com/73924235/134510153-04f50959-7977-425f-b944-325db47a8d23.png)
+
 - Menuju ke Hypertext Transfer Protocol, Get, lalu ke Authorization, ada credentials disana.
-![image](nomor3b.png)
+![nomor3b](https://user-images.githubusercontent.com/73924235/134510173-8009d732-8e64-43ca-8e72-f8d4e560474b.png)
 
 ### 4. Temukan paket mysql yang mengandung perintah query select! ###
 

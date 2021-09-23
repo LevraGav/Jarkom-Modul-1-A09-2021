@@ -24,10 +24,25 @@ Cara :
 ![image](https://user-images.githubusercontent.com/36225278/134457856-b2c40b16-1311-493b-8e17-1cc7808dbe1d.png)
 
 ### 3. Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng! ###
+Cara :
+- Membuka file yang telah didownload dari drive (1-5)
+- Mengisi display filter dengan : http.host contains "basic.ichimarumaru.tech"
+![image](nomor3a.png)
+- Menuju ke Hypertext Transfer Protocol, Get, lalu ke Authorization, ada credentials disana.
+![image](nomor3b.png)
 
 ### 4. Temukan paket mysql yang mengandung perintah query select! ###
 
 ### 5. Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap! ###
+Cara :
+- Membuka File yang didownload pada Drive (1-5)
+-	Memasukan display filter dengan `mysql.query contains INSERT`
+-	Memilih Follow lalu Follow TCP Stream
+![soal5a](https://user-images.githubusercontent.com/73924235/134495117-7ddd820c-19d8-444a-881f-6bdd000df563.png)
+-	Terlihat bahwa Username nya adalah akakanomi dan passwordnya pemisah4lautan
+-	Login ke http://portal.ichimarumaru.tech/
+![soal5b](https://user-images.githubusercontent.com/73924235/134495806-0175083d-763e-4c22-af62-803021eb7421.png)
+
 
 ### 6. Cari username dan password ketika melakukan login ke FTP Server! ###
 Username : secretuser
@@ -63,12 +78,53 @@ Cara :
 ### 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut! ###
 
 ### 9. ari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut! ###
+Cara :
+- Buka File yang ada pada Drive (8-10)
+-	Mengisi display filter dengan ftp-data.command contains “secret.zip” 
+![soal9a](https://user-images.githubusercontent.com/73924235/134495308-37954fbb-b986-474d-bb72-a9d3ab0d784c.png)
+-	Memilih follow dan follow TCP
+![soal9b](https://user-images.githubusercontent.com/73924235/134495323-231862f6-0754-43e1-9883-6c5665d8d910.png)
+-	Kemudian terlihat data yang masih ASCII, diganti menjadi raw
+![soal9c](https://user-images.githubusercontent.com/73924235/134495340-8b42127e-0b23-41a3-a1f4-e30d65c327bc.png)
+-	Lalu melakukan Save As dengan nama secret.zip
+![soal9d](https://user-images.githubusercontent.com/73924235/134495387-90141451-90d1-4113-8036-4a2015f81bfd.png)
+-	Kemudian membuka Folder berisi Wanted.pdf, namun belum bisa dibuka karena memiliki password
+![soal9e](https://user-images.githubusercontent.com/73924235/134495398-cbc2d07c-0753-4461-bc83-75ff403bdfb7.png)
 
+ 
 ### 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"! ###
+-	Buka File yang ada pada Drive (8-10)
+-	Mengisi display filter dengan `ftp-data.command contains “secret.zip”`
+![soal10a](https://user-images.githubusercontent.com/73924235/134495482-4160e7ce-84a6-46bd-90da-d782ed36d3d4.png)
+
+-	Memilih follow dan follow TCP
+ ![soal10b](https://user-images.githubusercontent.com/73924235/134495514-e77d24b3-267e-4c72-8f5b-ccf5dea56330.png)
+
+-	Kemudian terlihat data yang menunjukan bahwa password (key) ada pada file bukanapaapa.txt dari tail-1 (yaitu 1 dari yang paling bawah)
+ ![soal10c](https://user-images.githubusercontent.com/73924235/134495528-d335ccb8-2ea4-430f-a902-fba2badb0115.png)
+
+-	Mengisi display filter lagi dengan ftp-data.command contains “bukanapaapa.txt”
+ ![soal10d](https://user-images.githubusercontent.com/73924235/134495547-ace13651-282d-42d4-b1f7-f772f514e399.png)
+
+-	Kemudian melakukan follow TCP lagi
+ ![soal10e](https://user-images.githubusercontent.com/73924235/134495563-ee65f051-8b93-4d4c-90ac-9c16e60f3a20.png)
+
+-	Terlihat password untuk Wanted.pdf yaitu d1b1langbukanapaapajugagapercaya
+ ![soal10f](https://user-images.githubusercontent.com/73924235/134495573-fc36dd2e-6e26-42e0-9cab-5b5fa99d9d46.png)
+
+-	Memasukan password ke wanted.pdf.
+![soal10g](https://user-images.githubusercontent.com/73924235/134495603-11783db4-7b98-400e-91ce-e850967bbf4f.png)
+
 
 ### 11. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!  ###
 
 ### 12. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21! ###
+Cara :
+- Mengisi Capture Filter dengan `port 21`
+![soal12a](https://user-images.githubusercontent.com/73924235/134495705-648736d6-9354-45e8-aebc-7c2d11fae484.png)
+- Hasil Kosong, karena port 21 harus menggunakan FTP yang bisa diakses melalui filezilla
+![soal12b](https://user-images.githubusercontent.com/73924235/134495753-49286cf9-422e-43fe-af40-032200e1e0ed.png)
+
 
 ### 13. Filter sehingga wireshark hanya menampilkan paket yang menuju port 443! ###
 

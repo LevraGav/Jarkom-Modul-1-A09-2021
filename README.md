@@ -78,7 +78,7 @@ Cara :
 
 ### 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut! ###
 
-### 9. ari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut! ###
+### 9. Cari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut! ###
 Cara :
 - Buka File yang ada pada Drive (8-10)
 -	Mengisi display filter dengan ftp-data.command contains “secret.zip” 

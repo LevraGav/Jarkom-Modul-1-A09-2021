@@ -47,6 +47,7 @@ Cara :
 ![image](https://user-images.githubusercontent.com/36225278/134458097-b0c04b34-2476-45b5-b833-920824022a85.png)
 
 - Lalu klik kanan, dan pilih follow ⇒ TCP Stream
+
 ![image](https://user-images.githubusercontent.com/36225278/134458143-785723e9-b58a-4b33-bfe3-1489eb2add9b.png)
 
 - Kemudian kita ubah show datanya, menjadi dalam bentuk RAW

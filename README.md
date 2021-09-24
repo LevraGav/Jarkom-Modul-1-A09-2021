@@ -39,7 +39,7 @@ Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan
 
 ### Langkah Penyelesaian : 
 - Membuka file yang telah didownload dari drive (1-5)
-- Mengisi display filter dengan : http.host contains "basic.ichimarumaru.tech"
+- Mengisi display filter dengan : `http.host contains "basic.ichimarumaru.tech"`
 ![nomor3a](https://user-images.githubusercontent.com/73924235/134510153-04f50959-7977-425f-b944-325db47a8d23.png)
 
 - Menuju ke Hypertext Transfer Protocol, Get, lalu ke Authorization, ada credentials disana.
@@ -50,7 +50,7 @@ Temukan paket mysql yang mengandung perintah query select!
 
 ### Langkah Penyelesaian : 
 - Membuka file yang telah didownload dari drive (1-5)
-- Mengisi display filter dengan : mysql.query contains select || mysql.query contains SELECT
+- Mengisi display filter dengan : `mysql.query contains select || mysql.query contains SELECT`
 ![image](https://user-images.githubusercontent.com/72689610/134608740-19828052-d6f8-4135-8476-2c8a54cee3cf.png)
 ![image](https://user-images.githubusercontent.com/72689610/134608764-d1af4a13-833b-44ae-9c49-617cee3802ee.png)
 ![image](https://user-images.githubusercontent.com/72689610/134608798-e03248cb-caa9-4d38-8668-eaab9f3bc5fd.png)
@@ -90,7 +90,7 @@ Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..
 
 ### Langkah Penyelesaian : 
 - Membuka file yang telah didownload dari drive (6-7)
-- Mengisi display filter dengan : frame contains "Real.pdf"
+- Mengisi display filter dengan : `frame contains "Real.pdf"`
 
 ![image](https://user-images.githubusercontent.com/36225278/134458097-b0c04b34-2476-45b5-b833-920824022a85.png)
 
@@ -122,7 +122,7 @@ Cari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Sa
 
 ### Langkah Penyelesaian : 
 - Buka File yang ada pada Drive (8-10)
--	Mengisi display filter dengan ftp-data.command contains “secret.zip” 
+-	Mengisi display filter dengan `ftp-data.command contains “secret.zip” `
 ![soal9a](https://user-images.githubusercontent.com/73924235/134495308-37954fbb-b986-474d-bb72-a9d3ab0d784c.png)
 -	Memilih follow dan follow TCP
 ![soal9b](https://user-images.githubusercontent.com/73924235/134495323-231862f6-0754-43e1-9883-6c5665d8d910.png)
@@ -138,7 +138,7 @@ Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server te
 
 ### Langkah Penyelesaian : 
 -	Buka File yang ada pada Drive (8-10)
--	Mengisi display filter dengan `ftp-data.command contains “secret.zip”`
+-	Mengisi display filter dengan `ftp-data.command contains “history.txt”`
 ![soal10a](https://user-images.githubusercontent.com/73924235/134495482-4160e7ce-84a6-46bd-90da-d782ed36d3d4.png)
 
 -	Memilih follow dan follow TCP
@@ -176,10 +176,12 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
 ### Langkah Penyelesaian :
-- Mengisi Capture Filter dengan `port 21`
+- Mengisi Capture Filter dengan `port 21` pada Adapter for Loopback Traffic
 ![soal12a](https://user-images.githubusercontent.com/73924235/134495705-648736d6-9354-45e8-aebc-7c2d11fae484.png)
 - Hasil Kosong, karena port 21 harus menggunakan FTP yang bisa diakses melalui filezilla
 ![soal12b](https://user-images.githubusercontent.com/73924235/134495753-49286cf9-422e-43fe-af40-032200e1e0ed.png)
+- Ketika XAMPP dinyalakan dan Filezilla diconnect maka akan menghasilkan hasil berikut
+![soal12c](https://user-images.githubusercontent.com/73924235/134642277-6e7a9cf6-aaf7-4ae9-98b9-a69d7546dee8.JPG)
 
 # --- No 13 --- 
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!

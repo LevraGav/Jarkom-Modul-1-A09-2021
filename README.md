@@ -221,4 +221,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 - Output :
 ![image](https://user-images.githubusercontent.com/72689610/134632169-5379cc0b-6cf3-4632-a5ec-af7d3735c261.png)
 
+## Kendala Pengerjaan
+- Saat dijalankan, terkadang output tidak keluar
+
 
